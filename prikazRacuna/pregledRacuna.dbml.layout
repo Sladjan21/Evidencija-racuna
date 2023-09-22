@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="pregledRacuna">
+  <DataContextMoniker Name="/pregledRacunaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c096ab4d-3d09-46bb-8c76-359cf60c538a" absoluteBounds="0.75, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/pregledRacunaDataContext/Firma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8797eb0c-64f2-4c74-b56d-b33bb17601c6" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="16257c29-5e89-4cfa-b5e8-9dc6c35a7ca6" absoluteBounds="3.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/pregledRacunaDataContext/Racun" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bc9b838-4636-4ff3-bd50-81f9667c3998" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.76044840494792); (3.5 : 1.76044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pregledRacunaDataContext/Firma/Firma_Racun" />
+      <nodes>
+        <classShapeMoniker Id="c096ab4d-3d09-46bb-8c76-359cf60c538a" />
+        <classShapeMoniker Id="16257c29-5e89-4cfa-b5e8-9dc6c35a7ca6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

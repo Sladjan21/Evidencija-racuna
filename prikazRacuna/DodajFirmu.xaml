@@ -1,0 +1,23 @@
+﻿<Window x:Class="prikazRacuna.DodajFirmu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prikazRacuna"
+        mc:Ignorable="d"
+        Title="DodajFirmu" Height="331.635" Width="339.336">
+    <Grid>
+        <Label Content="PIB" HorizontalAlignment="Left" Margin="58,8,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbPIB" HorizontalAlignment="Left" Height="23" Margin="117,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Label Content="MB" HorizontalAlignment="Left" Margin="58,53,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMB" HorizontalAlignment="Left" Height="23" Margin="117,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Naziv" HorizontalAlignment="Left" Margin="58,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbNaziv" HorizontalAlignment="Left" Height="23" Margin="117,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Sediste" HorizontalAlignment="Left" Margin="58,149,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbSediste" HorizontalAlignment="Left" Height="23" Margin="117,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Tekuci racun" HorizontalAlignment="Left" Margin="31,200,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbTekuci" HorizontalAlignment="Left" Height="23" Margin="117,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Button Name="btnDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="145,260,0,0" VerticalAlignment="Top" Width="75" Click="tbDodaj_Click"/>
+
+    </Grid>
+</Window>

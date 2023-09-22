@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prikazRacuna", "prikazRacuna\prikazRacuna.csproj", "{2EA94F74-3B19-4BD4-82FD-74CC9291E634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA94F74-3B19-4BD4-82FD-74CC9291E634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA94F74-3B19-4BD4-82FD-74CC9291E634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA94F74-3B19-4BD4-82FD-74CC9291E634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA94F74-3B19-4BD4-82FD-74CC9291E634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56B00522-C8F6-4FCA-BC1C-C5016D0D11C0}
+	EndGlobalSection
+EndGlobal

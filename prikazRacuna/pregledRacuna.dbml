@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="pregledRacuna" Class="pregledRacunaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-FID9UGE\MSSQLSERVER01;Initial Catalog=pregledRacuna;Integrated Security=True" SettingsObjectName="prikazRacuna.Properties.Settings" SettingsPropertyName="pregledRacunaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Firma" Member="Firmas">
+    <Type Name="Firma">
+      <Column Name="IDPIB" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MB" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Naziv" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sediste" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TR" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Firma_Racun" Member="Racuns" ThisKey="IDPIB" OtherKey="FK_PIB" Type="Racun" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Racun" Member="Racuns">
+    <Type Name="Racun">
+      <Column Name="FK_PIB" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BR_RAC" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Datum" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Duguje" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Potrazuje" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Firma_Racun" Member="Firma" ThisKey="FK_PIB" OtherKey="IDPIB" Type="Firma" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
